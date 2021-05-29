@@ -34,7 +34,7 @@ def execSQL(**context):
     sql += select_sql
     cur.execute(sql)
 
-    cur.execute("SELECT COUNT(1) FROM {schema}.temp_{table} AS """.format(schema=schema, table=table))
+    cur.execute("SELECT COUNT(1) FROM {schema}.temp_{table}""".format(schema=schema, table=table))
     count = cur.fetchone()[0]
     if count == 0:
         raise ValueError("{schema}.{table} didn't have any record".format(schema=schema, table=table))
