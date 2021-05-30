@@ -16,6 +16,7 @@ sudo apt-get install -y python3-pip
 
 ```
 sudo pip3 install apache-airflow
+sudo pip3 install apache-airflow-providers-postgres[amazon]
 sudo pip3 install cryptography psycopg2-binary boto3 botocore 
 ```
 
