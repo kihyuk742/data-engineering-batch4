@@ -15,6 +15,8 @@ sudo apt-get install -y python3-pip
 #### Next install Airflow and other Python modules we need
 
 ```
+sudo apt-get install postgresql-server-dev-all
+sudo apt-get install postgresql-common
 sudo pip3 install apache-airflow
 sudo pip3 install apache-airflow-providers-postgres[amazon]
 sudo pip3 install cryptography psycopg2-binary boto3 botocore 
